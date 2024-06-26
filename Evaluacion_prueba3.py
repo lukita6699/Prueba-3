@@ -38,35 +38,6 @@ def ver_productos():
 #Axel hizo esto
 def modificar_producto():
     print("")
-        while True:
-            print("1.-cambiar nombre")
-            print("2.-cambiar edad")
-            print("3.-cambiar curso")
-            print("4.-cambiar promedio")
-            print("5.-salir")
-            try:
-                opc=int(input("Ingrese Una opcion: "))
-            except:
-                print ("Ingrese un numero valido")
-            else:
-                if opc==1:
-                     martriz.remove(nom)
-                     nom=input("ingrese el nombre: ")
-                     matriz.append(nom)
-                elif opc==2:
-                     matriz.remove(edad)
-                     nom=input("ingrese la edad: ")
-                     matriz.append(edad)
-                elif opc==3:
-                     matriz.remove(nom)
-                     nom=input("ingrese el curso: ")
-                     matriz.append(curso)
-                elif opc==4:
-                     matriz.remove(nom)
-                     nom=input("ingrese el promedio: ")
-                     matriz.append(promedio)
-                elif opc==5:
-                     break;
 
 def eliminar_producto():
     print (lista_estudiantes)
