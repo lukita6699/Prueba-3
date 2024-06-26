@@ -6,6 +6,7 @@ matriz=[]
 import time
 #Ejecucion
 
+#Lucas hizo esto
 def agregar_estudiante():
     while True:
         try:
@@ -33,7 +34,8 @@ def ver_productos():
     print (lista_estudiantes);
     for x in matriz:
         print (x)
-
+        
+#Axel hizo esto
 def modificar_producto():
     print("")
         while True:
@@ -42,25 +44,29 @@ def modificar_producto():
             print("3.-cambiar curso")
             print("4.-cambiar promedio")
             print("5.-salir")
-            opc=int(input("Ingrese Una opcion: "))
-            if opc==1:
-                 fila.remove(nom)
-                 nom=input("ingrese el nombre: ")
-                 fila.append(nom)
-            elif opc==2:
-                 fila.remove(edad)
-                 nom=input("ingrese la edad: ")
-                 fila.append(edad)
-            elif opc==3:
-                 fila.remove(nom)
-                 nom=input("ingrese el curso: ")
-                 fila.append(curso)
-            elif opc==4:
-                 fila.remove(nom)
-                 nom=input("ingrese el promedio: ")
-                 fila.append(promedio)
-            elif opc==5:
-                 break
+            try:
+                opc=int(input("Ingrese Una opcion: "))
+            except:
+                print ("Ingrese un numero valido")
+            else:
+                if opc==1:
+                     martriz.remove(nom)
+                     nom=input("ingrese el nombre: ")
+                     matriz.append(nom)
+                elif opc==2:
+                     matriz.remove(edad)
+                     nom=input("ingrese la edad: ")
+                     matriz.append(edad)
+                elif opc==3:
+                     matriz.remove(nom)
+                     nom=input("ingrese el curso: ")
+                     matriz.append(curso)
+                elif opc==4:
+                     matriz.remove(nom)
+                     nom=input("ingrese el promedio: ")
+                     matriz.append(promedio)
+                elif opc==5:
+                     break;
 
 def eliminar_producto():
     print (lista_estudiantes)
@@ -76,7 +82,7 @@ def eliminar_producto():
         for x in matriz:
             print (x)
 
-
+#Matias hizo esto
 def guardar_archivo():
  import csv
  with open('nuevo_archivolol.csv', 'w', newline='', encoding='utf-8') as archivo_csv:
